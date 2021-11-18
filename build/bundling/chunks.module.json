@@ -1,0 +1,106 @@
+{
+  "errors": [],
+  "warnings": [],
+  "hash": "5edc3d390f599d44b6d1",
+  "publicPath": "/static/",
+  "outputPath": "/Users/imac/Nodeprojects/wpfront/build/static",
+  "assetsByChunkName": {
+    "list": [
+      "list.module.js",
+      "list.23345a859d653f029376.hot-update.js"
+    ],
+    "wpfront": "wpfront.module.js"
+  },
+  "assets": [
+    {
+      "name": "23345a859d653f029376.hot-update.json",
+      "size": 46,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "list.23345a859d653f029376.hot-update.js",
+      "size": 25505,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "list.module.js",
+      "size": 45860,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "wpfront.module.js",
+      "size": 6813851,
+      "chunks": [
+        "wpfront"
+      ],
+      "chunkNames": [
+        "wpfront"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "namedChunkGroups": {
+    "wpfront": {
+      "chunks": [
+        "wpfront"
+      ],
+      "assets": [
+        "wpfront.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js",
+        "list.23345a859d653f029376.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "generator": "loadable-components",
+  "chunks": [
+    {
+      "id": "list",
+      "files": [
+        "list.module.js",
+        "list.23345a859d653f029376.hot-update.js"
+      ]
+    },
+    {
+      "id": "wpfront",
+      "files": [
+        "wpfront.module.js"
+      ]
+    }
+  ]
+}
