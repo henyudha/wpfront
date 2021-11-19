@@ -52,9 +52,8 @@ const ButtonSubs = styled.button`
   }
 `;
 
-const Title = styled.h2`
+const Title = styled.h1`
   margin: 0 0 16px;
-  font-weight: 700;
 `;
 
 const StyledLink = styled(Link)`

@@ -103,7 +103,7 @@ const TitleAlign = styled.div`
   text-align:center;
 `;
 
-const Title = styled.h1`
+const Title = styled.h3`
   margin: 0;
   margin-top: 24px;
   margin-bottom: 4px;
@@ -138,8 +138,9 @@ const Content = styled.div`
   }
 
   p {
-    line-height: 1.6em;
+    line-height: 1.5em;
     font-size: 1.1em;
+    margin: .2em 0 1.1em;
   }
 
   img {

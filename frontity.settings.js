@@ -14,10 +14,10 @@ const settings = {
         theme: {
           menu: [
             ["home", "/"],
-            ["news", "/kanal/news/"],
-            ["esai", "/kanal/blog/"],
-            ["inspirasi", "/kanal/inspirasi/"],
-            ["media", "/kanal/media/"],
+            ["news", "/cat/news/"],
+            ["esai", "/cat/esai/"],
+            ["inspirasi", "/cat/inspirasi/"],
+            ["media", "/cat/media/"],
             ["agenda", "/agenda/"],
             ["tqn", "/docs/"],
           ],
@@ -33,7 +33,7 @@ const settings = {
       state: {
         source: {
           url: "https://cms.aqabah.org",
-          // categoryBase: "kanal", // Kategori dari WP-TQNN 
+          categoryBase: "cat", // Kategori dari WP-TQNN 
         },
       },
     },
