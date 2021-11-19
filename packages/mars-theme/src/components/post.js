@@ -138,8 +138,8 @@ const Content = styled.div`
   }
 
   p {
-    line-height: 1.5em;
-    font-size: 1.1em;
+    line-height: 1.55em;
+    font-size: 1em;
     margin: .2em 0 1.1em;
   }
 

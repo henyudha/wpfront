@@ -11,7 +11,7 @@ const List = ({ state }) => {
       {/* If the list is a taxonomy, we render a title. */}
       {data.isTaxonomy && (
         <Header>
-          {data.taxonomy}:{" "}
+          {/* {data.taxonomy}:{" Kanal "}  */}
           <b>{decode(state.source[data.taxonomy][data.id].name)}</b>
         </Header>
       )}
@@ -22,7 +22,9 @@ const List = ({ state }) => {
           Author: <b>{decode(state.source.author[data.id].name)}</b>
         </Header>
       )}
-
+      
+      <LineCat />
+      
       {/* Iterate over the items of the list. */}
       {data.items.map(({ type, id }) => {
         const item = state.source[type][id];
@@ -38,12 +40,24 @@ export default connect(List);
 
 const Container = styled.section`
   width: 640px;
-  margin: 0;
+  margin: 20px 0 0;
   padding: 0 24px 30px;
   list-style: none;
 `;
 
 const Header = styled.h3`
   font-weight: 300;
-  text-transform: capitalize;
+  text-transform: lowercase;
+  text-align: center;
+  letter-spacing: .1em;
+`;
+
+const LineCat = styled.hr`
+  margin: 1rem 0;
+  border: 0;
+  height: 1px;
+  background: #cccccc;
+  background-image: -webkit-gradient(linear,left top,right top,from(#f5f5f5),color-stop(#cccccc),to(#f5f5f5));
+  background-image: -webkit-linear-gradient(left,#f5f5f5,#cccccc,#f5f5f5);
+  background-image: linear-gradient(to right,var#f5f5f5,#cccccc,#f5f5f5);
 `;

@@ -4,7 +4,7 @@ const settings = {
     frontity: {
       url: "https://cms.aqabah.org",
       title: "TQNN",
-      description: "Media berita dan informasi ikhwan-akhwat TQN Pontren Suryalaya, serta inspirasi ketasawufan dan ketarekatan",
+      description: "Media berita dan informasi ikhwan-akhwat TQN Pontren Suryalaya. Inspirasi ketasawufan dan ketarekatan",
     },
   },
   packages: [
@@ -13,13 +13,13 @@ const settings = {
       state: {
         theme: {
           menu: [
-            ["home", "/"],
+            // ["home", "/"],
             ["news", "/cat/news/"],
             ["esai", "/cat/esai/"],
             ["inspirasi", "/cat/inspirasi/"],
             ["media", "/cat/media/"],
             ["agenda", "/agenda/"],
-            ["tqn", "/docs/"],
+            ["dok", "/dok/"],
           ],
           featured: {
             showOnList: true,
@@ -39,6 +39,7 @@ const settings = {
     },
     "@frontity/tiny-router",
     "@frontity/html2react",
+    "@frontity/head-tags",
   ],
 };
 
