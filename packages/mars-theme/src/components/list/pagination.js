@@ -48,5 +48,5 @@ export default connect(Pagination);
 
 const Text = styled.em`
   display: inline-block;
-  margin-top: 16px;
+  margin-top: 16px 0 30px;
 `;

@@ -2,9 +2,9 @@ const settings = {
   name: "wpfront",
   state: {
     frontity: {
-      url: "https://tqnnews.com",
-      title: "Test Frontity Blog",
-      description: "WordPress installation for Frontity development. Frontity is the easiest way to create lightning fast websites using WordPress and React. Open source and free to use.",
+      url: "https://cms.aqabah.org",
+      title: "TQNN",
+      description: "Media berita dan informasi ikhwan-akhwat TQN Pontren Suryalaya, serta inspirasi ketasawufan dan ketarekatan",
     },
   },
   packages: [
@@ -15,11 +15,11 @@ const settings = {
           menu: [
             ["home", "/"],
             ["news", "/kanal/news/"],
+            ["esai", "/kanal/blog/"],
             ["inspirasi", "/kanal/inspirasi/"],
-            ["blog", "/kanal/blog/"],
             ["media", "/kanal/media/"],
             ["agenda", "/agenda/"],
-            ["about us", "/about-us/"],
+            ["tqn", "/docs/"],
           ],
           featured: {
             showOnList: true,
@@ -32,8 +32,8 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          url: "https://tqnnews.com",
-          categoryBase: "kanal", // Kategori dari WP-TQNN
+          url: "https://cms.aqabah.org",
+          // categoryBase: "kanal", // Kategori dari WP-TQNN 
         },
       },
     },
