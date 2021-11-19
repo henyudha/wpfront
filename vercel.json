@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "version": 2,
   "builds": [
+=======
+  "version":2,
+  "builds":[
+>>>>>>> 08517e58a4be54c1f26a7beae3462509879e4411
     {
       "src": "package.json",
       "use": "@frontity/now"
