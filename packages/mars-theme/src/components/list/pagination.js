@@ -20,7 +20,7 @@ const Pagination = ({ state, actions }) => {
   }, []);
 
   return (
-    <div>
+    <Pages>
       {/* If there's a next page, render this link */}
       {next && (
         <Link link={next}>
@@ -36,7 +36,7 @@ const Pagination = ({ state, actions }) => {
           <Text>Newer posts →</Text>
         </Link>
       )}
-    </div>
+    </Pages>
   );
 };
 
@@ -50,3 +50,7 @@ const Text = styled.em`
   display: inline-block;
   margin-top: 16px 0 30px;
 `;
+
+const Pages = styled.div`
+  text-align: center;
+`
