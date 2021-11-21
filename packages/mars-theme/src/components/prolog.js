@@ -12,6 +12,7 @@ const Prolog = ({ state }) => {
         </StyledLink>
         {/* <p>Media berita dan informasi ikhwan-akhwat TQN Pontren Suryalaya<br/>serta wawasan ketarekatan</p> */}
         <p>{state.frontity.description}</p>
+        
         <ButtonSubs>subscribe</ButtonSubs>
       </Container>
       <MobileMenu />
@@ -28,24 +29,28 @@ const Container = styled.div`
   padding: 20px 16px;
   margin: auto;
   & > p {
-    max-width: 680px;
+    max-width: 800px;
     margin: auto;
-    font-size: 1.2em;
+    font-size: 1.29em;
+    font-weight: 200;
     line-height: 1.4em;
     color: #666666;
   }
 `;
 
 const ButtonSubs = styled.button`
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1em;
   color: #fff;
-  font-size: 0.95em;
   margin: 20px 0 0;
   padding: 8px 20px;
   border-radius: .35em;
-  background-color: #56dc4c;
+  background: #56dc4c;
   border-color: #56dc4c;
   border: 1px solid transparent;
-  cursor: pointer;
   &:hover {
     background-color: #2db323;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;

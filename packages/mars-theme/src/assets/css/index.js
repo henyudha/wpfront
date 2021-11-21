@@ -11,22 +11,26 @@ const Styling = () => {
             src:url('https://kangismet.github.io/fonts/Uthman-Thaha.eot');
             src:url('https://kangismet.github.io/fonts/Uthman-Thaha.eot?#iefix') format('embedded-opentype'),
             url('https://kangismet.github.io/fonts/Uthman-Thaha.ttf') format('truetype');
-            font-weight:400;
             font-weight:normal;
             font-display: swap;
           }
           html {
             font-size: 100%;
-            font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            color: #051504;
-            background-color: #fff;
-            line-height: 1,15;
+            -webkit-text-size-adjust: 100%;
             -webkit-font-smoothing: antialiased;
           }
-          body {margin: 0;}
+          body {
+            margin: 0;
+            font-size: 17px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1,15294;
+            color: #051504;
+            background: #fff;
+          }
           p {
-            font-weight: 300;
-            letter-spacing: .01rem;
+            letter-spacing: .006em;
           }
           a, a:visited {
             color: inherit;
@@ -35,7 +39,7 @@ const Styling = () => {
           h1,h2,h3,h4,h5,h6 {
             margin-top: 0;
             margin-bottom: .2rem;
-            font-weight: 700;
+            font-weight: 600;
             letter-spacing: .01rem;
           }
           h1 {font-size: 2.5rem;}
