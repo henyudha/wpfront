@@ -24,7 +24,7 @@ const Pagination = ({ state, actions }) => {
       {/* If there's a next page, render this link */}
       {next && (
         <Link link={next}>
-          <Text>← Older posts</Text>
+          <Text>← Sebelumnya</Text>
         </Link>
       )}
 
@@ -33,7 +33,7 @@ const Pagination = ({ state, actions }) => {
       {/* If there's a previous page, render this link */}
       {previous && (
         <Link link={previous}>
-          <Text>Newer posts →</Text>
+          <Text>Selanjutnya →</Text>
         </Link>
       )}
     </Pages>
@@ -53,4 +53,6 @@ const Text = styled.em`
 
 const Pages = styled.div`
   text-align: center;
+  font-size: 0.8em;
+  color: #666666;
 `
