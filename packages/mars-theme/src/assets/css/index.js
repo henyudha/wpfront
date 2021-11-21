@@ -30,7 +30,7 @@ const Styling = () => {
             background: #fff;
           }
           p {
-            letter-spacing: .006em;
+            letter-spacing: .005em;
           }
           a, a:visited {
             color: inherit;
@@ -40,7 +40,7 @@ const Styling = () => {
             margin-top: 0;
             margin-bottom: .2rem;
             font-weight: 600;
-            letter-spacing: .01rem;
+            letter-spacing: .005rem;
           }
           h1 {font-size: 2.5rem;}
           h2 {font-size: 2rem;}
@@ -51,9 +51,9 @@ const Styling = () => {
           
           .arab {
             font-family: "UthmanThaha", "Traditional Arabic", sans-serif;
-            font-size: 1.6rem;
+            font-size: 26px;
             font-weight: normal;
-            line-height: 2.7rem;
+            line-height: 2.8rem;
             margin-bottom: 1rem;
             text-align: right;
             direction: rtl;

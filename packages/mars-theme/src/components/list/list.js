@@ -23,7 +23,7 @@ const List = ({ state }) => {
         </Header>
       )}
       
-      <LineCat />
+      <Lines />
       
       {/* Iterate over the items of the list. */}
       {data.items.map(({ type, id }) => {
@@ -52,7 +52,7 @@ const Header = styled.h3`
   letter-spacing: .1em;
 `;
 
-const LineCat = styled.hr`
+const Lines = styled.hr`
   margin: 1rem 0;
   border: 0;
   height: 1px;
