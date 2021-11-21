@@ -7,7 +7,10 @@ const Footer = ({ state }) => {
     <>
       <Container>
         <Lines />
-        <div>Tentang Kami </div>
+        <div>
+          Tentang Kami | privacy | disclaimer | copyright | pedoman siber<p>
+          &copy; 2021 - TQNN. Seluruh hak cipta dilindungi undang-undang. </p>
+          </div>
       </Container>
       <MobileMenu />
     </>
@@ -24,13 +27,14 @@ font-size: 12px;
 text-align: center;
 max-width: 100%;
 box-sizing: border-box;
-margin-bottom: 20px;
+margin-bottom: 24px;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
+cursor: pointer;
 `;
 
 const Lines = styled.hr`
-  margin:0 0 10px;
+  margin:0 0 8px;
   border:0;
 `
