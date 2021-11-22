@@ -7,9 +7,9 @@ import Post from "./post";
 import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
-import Menu from "./menu";
 import Prolog from "./prolog";
 import Styling from "../assets/css";
+import Banner from "./banner";
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -41,6 +41,7 @@ const Theme = ({ state }) => {
       <HeadContainer>
         <Header />
       </HeadContainer>
+      {/* <Banner /> */}
 
       {/* Prolog only show in home */}
       <Prolog when={data.link["/"]} />

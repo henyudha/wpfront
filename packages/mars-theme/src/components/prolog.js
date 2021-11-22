@@ -25,11 +25,11 @@ export default connect(Prolog);
 
 // Prolog web 
 const Container = styled.div`
+  max-width: 800px;
   text-align: center;
   padding: 20px 16px;
   margin: auto;
   & > p {
-    max-width: 800px;
     margin: auto;
     font-size: 1.29em;
     font-weight: 200;

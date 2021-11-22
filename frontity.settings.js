@@ -2,7 +2,7 @@ const settings = {
   name: "wpfront",
   state: {
     frontity: {
-      url: "https://cms.aqabah.org",
+      url: "https://cms.aqabah.org/",
       title: "TQNN",
       description: "Media berita dan informasi ikhwan-akhwat TQN Pontren Suryalaya. Inspirasi ketasawufan dan ketarekatan",
     },
@@ -12,6 +12,7 @@ const settings = {
       name: "@frontity/mars-theme",
       state: {
         theme: {
+          activated: "off",
           menu: [
             // ["home", "/"],
             ["news", "/cat/news/"],
@@ -32,8 +33,10 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          url: "https://cms.aqabah.org",
-          categoryBase: "cat", // Kategori dari WP-TQNN 
+          url: "https://cms.aqabah.org/",
+          categoryBase: "cat", // Custom Category dari WP di menu setting permalinks 
+          tagBase: "", // Custom Tag dari WP di menu setting permalinks
+          homepage: "", // Custom tampilan static page dari WP di menu setting reading
         },
       },
     },
