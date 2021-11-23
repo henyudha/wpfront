@@ -12,15 +12,14 @@ const settings = {
       name: "@frontity/mars-theme",
       state: {
         theme: {
-          activated: "off",
           menu: [
             // ["home", "/"],
-            ["news", "/cat/news/"],
-            ["esai", "/cat/esai/"],
-            ["inspirasi", "/cat/inspirasi/"],
-            ["media", "/cat/media/"],
-            ["agenda", "/agenda/"],
-            ["dok", "/dok/"],
+              // ["news", "/cat/news/"],
+              // ["esai", "/cat/esai/"],
+              // ["inspirasi", "/cat/inspirasi/"],
+              // ["media", "/cat/media/"],
+              // ["agenda", "/agenda/"],
+              // ["dok", "/dok/"],
           ],
           featured: {
             showOnList: true,

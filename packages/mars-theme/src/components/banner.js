@@ -13,7 +13,10 @@ const Banner = ({ state }) => {
 export default connect(Banner);
 
 const BannerContent = styled.div`
-  padding: 10px;
+  padding: 0;
+  max-width: 1130px;
+  height: 200px;
+  margin: auto;
   color: ${props => props.activated === 'on' ? 'red' : 'brown'};
   background: #cccccc;
 `;

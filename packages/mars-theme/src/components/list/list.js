@@ -1,6 +1,6 @@
 import { connect, styled, decode } from "frontity";
 import Item from "./list-item";
-import Pagination from "./pagination";
+import Pagination from "./pagination"; 
 
 const List = ({ state }) => {
   // Get the data of the current list.
@@ -19,7 +19,7 @@ const List = ({ state }) => {
       {/* If the list is for a specific author, we render a title. */}
       {data.isAuthor && (
         <Header>
-          Author: <b>{decode(state.source.author[data.id].name)}</b>
+          Editor: <b>{decode(state.source.author[data.id].name)}</b>
         </Header>
       )}
       

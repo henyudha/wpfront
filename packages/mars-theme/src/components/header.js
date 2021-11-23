@@ -25,7 +25,6 @@ const Container = styled.div`
   width: 1130px;
   max-width: 100%;
   box-sizing: border-box;
-  padding: 4px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

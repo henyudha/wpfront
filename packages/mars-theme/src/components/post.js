@@ -26,6 +26,7 @@ import FeaturedMedia from "./featured-media";
 const Post = ({ state, actions, libraries }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
+  // const data = state.source.get(state.router.link); <- ini yg asli bawaan theme
   // Get the data of the post.
   const post = state.source[data.type][data.id];
   // Get the data of the author.
@@ -58,7 +59,7 @@ const Post = ({ state, actions, libraries }) => {
             {author && (
               <StyledLink link={author.link}>
                 <Author>
-                  By <b>{author.name}</b>
+                  Editor: <b>{author.name}</b>
                 </Author>
               </StyledLink>
             )}
