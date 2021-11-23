@@ -119,12 +119,12 @@ const NavItem = styled.div`
 
 /* Tambahan untuk menu child */
 const NavItemWithChild = styled.div`
-  background: #051504;
+  background: blue;
 `;
 
 const ChildMenu = styled.div`
   left: 0;
-  background: 051504;
+  background: blue;
   width: 100%;
   z-index: 1;
 `;
