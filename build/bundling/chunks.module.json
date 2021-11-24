@@ -1,7 +1,7 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "16a6f27d44f21c2d1866",
+  "hash": "fec55bb54c8b779b80ff",
   "publicPath": "/static/",
   "outputPath": "/Users/imac/Nodeprojects/wpfront/build/static",
   "assetsByChunkName": {
@@ -23,7 +23,7 @@
     },
     {
       "name": "wpfront.module.js",
-      "size": 6919591,
+      "size": 6918605,
       "chunks": [
         "wpfront"
       ],
