@@ -13,13 +13,13 @@ const settings = {
       state: {
         theme: {
           menu: [
-            // ["home", "/"],
-              // ["news", "/cat/news/"],
-              // ["esai", "/cat/esai/"],
-              // ["inspirasi", "/cat/inspirasi/"],
-              // ["media", "/cat/media/"],
-              // ["agenda", "/agenda/"],
-              // ["dok", "/dok/"],
+            ["home", "/"],
+            ["news", "/cat/news/"],
+            ["esai", "/cat/esai/"],
+            ["inspirasi", "/cat/inspirasi/"],
+            ["media", "/cat/media/"],
+            ["agenda", "/agenda/"],
+            ["dok", "/dok/"],
           ],
           featured: {
             showOnList: true,
@@ -28,6 +28,10 @@ const settings = {
         },
       },
     },
+
+    // {
+    //   name: "newslah-theme"
+    // },
     {
       name: "@frontity/wp-source",
       state: {
