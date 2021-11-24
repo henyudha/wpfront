@@ -36,6 +36,12 @@ const Styling = () => {
             color: inherit;
             text-decoration: none;
           }
+          a:focus {
+            font-weight: bold;
+          }
+          a:-webkit-any-link {
+            cursor: pointer;
+          }
           h1,h2,h3,h4,h5,h6 {
             margin-top: 0;
             margin-bottom: .2rem;

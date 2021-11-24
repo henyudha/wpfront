@@ -42,9 +42,10 @@ const marsTheme = {
       closeMobileMenu: ({ state }) => {
         state.theme.isMobileMenuOpen = false;
       },
-      beforeSSR: async ({ state, actions }) => {
-        await actions.source.fetch(`/menu/${state.theme.menuUrl}/`);
-      },
+      // beforeSSR: async ({ state, actions }) => {
+      //   await actions.source.fetch(`/menu/${state.theme.menuUrl}/`);
+      // },
+      // Script utk menu fetch dari WP
     },
   },
   libraries: {
@@ -57,7 +58,7 @@ const marsTheme = {
       processors: [image, iframe, link],
     },
     source: {
-      handlers: [menuHandler],
+      // handlers: [menuHandler],
     },
   },
 };

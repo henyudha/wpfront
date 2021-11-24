@@ -59,7 +59,7 @@ const MenuLink = styled(Link)`
   &:focus {
     background-color: rgba(0, 0, 0, 0.05);
   }
-  /* styles for active link */
+  // styles for active link
   &[aria-current="page"] {
     color: #fff;
     font-weight: bold;

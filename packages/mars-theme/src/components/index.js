@@ -10,6 +10,7 @@ import PageError from "./page-error";
 import Prolog from "./prolog";
 import Styling from "../assets/css";
 import Banner from "./banner";
+import HomePage from "./homepage";
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -44,13 +45,14 @@ const Theme = ({ state }) => {
       {/* <Banner /> */}
 
       {/* Prolog only show in home */}
-      <Prolog when={data.link["/"]} />
+      {/* <Prolog when={data.link["/"]} /> */}
       
       {/* Add the main section. It renders a different component depending
       on the type of URL we are in. */}
       <Main>
         <Switch>
           <Loading when={data.isFetching} />
+          <HomePage when={data.isHome} />
           <List when={data.isArchive} />
           <Post when={data.isPostType} />
           <PageError when={data.isError} />
