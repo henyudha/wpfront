@@ -19,7 +19,7 @@ const settings = {
             ["inspirasi", "/cat/inspirasi/"],
             ["media", "/cat/media/"],
             ["agenda", "/agenda/"],
-            ["dok", "/dok/"],
+            ["docs", "/docs/"],
           ],
           featured: {
             showOnList: true,
