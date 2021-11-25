@@ -94,8 +94,9 @@ const Post = ({ state, actions, libraries }) => {
 export default connect(Post);
 
 const Container = styled.div`
-  width: 640px;
-  margin: 0;
+  max-width: 960px;
+  width:100%;
+  margin: 0 auto;
   padding: 24px;
 `;
 
@@ -130,17 +131,18 @@ const DateWrapper = styled.p`
  * selectors to style that HTML.
  */
 const Content = styled.div`
-  margin-top:40px;
   word-break: break-word;
-
+  margin-top: 30px;
   * {
-    max-width: 100%;
+    max-width: 624px;
+    width: 100%;
+    margin: auto;
   }
 
   p {
     line-height: 1.55em;
     font-size: 1.05em;
-    margin: .2em 0 1.1em;
+    margin: .2em auto 1.1em;
   }
 
   img {

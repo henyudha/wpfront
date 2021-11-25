@@ -45,7 +45,8 @@ export default connect(FeaturedMedia);
 
 const Container = styled.div`
   margin-top: 16px;
-  height: 360px;
+  height: 100%;
+  max-height: 450px;
   ${({ isAmp }) => isAmp && "position: relative;"};
 `;
 
