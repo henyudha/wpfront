@@ -68,16 +68,14 @@ export default connect(Nav);
 
 const NavContainer = styled.nav`
   list-style: none;
-  text-transform: lowercase;
   display: flex;
-  width: 1130px;
-  justify-content: center;
-  max-width: 100%;
+  text-transform: lowercase;
   box-sizing: border-box;
   padding: 0 24px;
+  justify-content: center;
   margin: 10px 0 0;
   overflow-x: auto;
-  border-bottom: 1px solid #cccccc;
+  // border-bottom: 1px solid hsl(116, 0%, 80%);
 
   @media screen and (max-width: 560px) {
     display: none;
