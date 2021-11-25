@@ -1,6 +1,6 @@
 import { connect, styled } from "frontity";
 import Link from "./link";
-import MobileMenu from "./menu";
+import MobileMenu from "./header/menu";
 
 
 const Prolog = ({ state }) => {

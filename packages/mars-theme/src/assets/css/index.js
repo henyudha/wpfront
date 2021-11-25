@@ -25,8 +25,8 @@ const Styling = () => {
             font-weight: 400;
             font-style: normal;
             font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            line-height: 1,15294;
-            color: #051504;
+            line-height: 1,153;
+            color: hsl(116, 67%, 5%);
             background: #fff;
           }
           p {

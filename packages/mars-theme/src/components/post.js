@@ -97,7 +97,7 @@ const Container = styled.div`
   width:100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 14px;
 `;
 
 const TitleAlign = styled.div`
@@ -166,7 +166,8 @@ const Content = styled.div`
   }
 
   blockquote {
-    margin: 16px 0;
+    text-align: center;
+    margin: 16px auto;
     background-color: rgba(0, 0, 0, 0.1);
     border-left: 4px solid rgba(12, 17, 43);
     padding: 4px 16px;

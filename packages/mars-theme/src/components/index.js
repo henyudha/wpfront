@@ -1,16 +1,17 @@
 import { Global, css, connect, styled, Head } from "frontity";
 import Switch from "@frontity/components/switch";
-import Header from "./header";
-import Footer from "./footer";
+import Header from "./header/header";
+import Footer from "./footer/footer";
 import List from "./list";
 import Post from "./post";
+import Page from "./pages/page";
 import Loading from "./loading";
 import Title from "./title";
+import HomePage from "./pages";
 import PageError from "./page-error";
-import Prolog from "./prolog";
 import Styling from "../assets/css";
+import Prolog from "./prolog";
 import Banner from "./banner";
-import HomePage from "./homepage";
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -54,10 +55,13 @@ const Theme = ({ state }) => {
           <Loading when={data.isFetching} />
           <HomePage when={data.isHome} />
           <List when={data.isArchive} />
+          <Page when={data.isPage} />
           <Post when={data.isPostType} />
           <PageError when={data.isError} />
         </Switch>
       </Main>
+
+      {/* Footer  */}
       <FooterContainer>
         <Footer />
       </FooterContainer>
@@ -73,7 +77,7 @@ const HeadContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #fff;
 `;
 
 // Prolog web 
@@ -89,6 +93,7 @@ const Main = styled.div`
 `;
 
 const FooterContainer = styled.div`
+  justify-content: center; 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 `;
