@@ -3,6 +3,7 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
+import listItem from "./list/list-item";
 
 /**
  * The Post component that Mars uses to render any kind of "post type", like
@@ -32,6 +33,8 @@ const Post = ({ state, actions, libraries }) => {
   const author = state.source.author[post.author];
   // Get a human readable date.
   const date = new Date(post.date);
+  // Tampilkan tags
+  const tag = state.source.tag[post.tags];
 
   // Get the html2react component.
   const Html2React = libraries.html2react.Component;
@@ -74,7 +77,6 @@ const Post = ({ state, actions, libraries }) => {
         <FeaturedMedia id={post.featured_media} />
       )}
 
-
       {data.isAttachment ? (
         // If the post is an attachment, just render the description property,
         // which already contains the thumbnail.
@@ -85,6 +87,13 @@ const Post = ({ state, actions, libraries }) => {
         // libraries.html2react.processors array.
         <Content>
           <Html2React html={post.content.rendered} />
+
+          {/* Menampilkan Tags */}
+          <Tag>
+            Tags: <StyledLink link={tag.link}>
+              <b>{tag.name}</b>
+            </StyledLink>
+          </Tag>
         </Content>
       )}
     </Container>
@@ -94,14 +103,14 @@ const Post = ({ state, actions, libraries }) => {
 export default connect(Post);
 
 const Container = styled.div`
-  width:100%;
+  width: 100%;
   max-width: 960px;
   margin: 0 auto;
   padding: 14px;
 `;
 
 const TitleAlign = styled.div`
-  text-align:center;
+  text-align: center;
 `;
 
 const Title = styled.h3`
@@ -126,6 +135,15 @@ const DateWrapper = styled.p`
   display: inline;
 `;
 
+const Tag = styled.div`
+  color: hsl(116, 0%, 40%);
+  font-size: 0.9em;
+  & > a {
+    text-decoration: none !important;
+    color: inherit;
+  }
+`;
+
 /**
  * This component is the parent of the `content.rendered` HTML. We can use nested
  * selectors to style that HTML.
@@ -142,7 +160,7 @@ const Content = styled.div`
   p {
     line-height: 1.55em;
     font-size: 1.15em;
-    margin: .2em auto 1.1em;
+    margin: 0.2em auto 1.1em;
   }
 
   img {
