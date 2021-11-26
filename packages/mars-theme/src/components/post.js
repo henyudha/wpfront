@@ -124,13 +124,13 @@ const StyledLink = styled(Link)`
 `;
 
 const Author = styled.p`
-  color: #666666;
+  color: hsl(116, 0%, 40%);
   font-size: 0.9em;
   display: inline;
 `;
 
 const DateWrapper = styled.p`
-  color: #666666;
+  color: hsl(116, 0%, 40%);
   font-size: 0.9em;
   display: inline;
 `;

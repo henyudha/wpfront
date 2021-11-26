@@ -49,7 +49,6 @@ const Header = styled.h3`
   font-weight: 300;
   text-transform: lowercase;
   text-align: center;
-  letter-spacing: 0.1em;
   margin: 30px 0 10px;
 `;
 

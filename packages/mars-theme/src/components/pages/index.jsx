@@ -1,12 +1,14 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "../link";
+import LogoImage from "../../assets/img/logo-horizontal.png";
 
 const HomePage = ({ state }) => {
   return (
     <Container>
       <StyledLink link="/">
-        <Title>{state.frontity.title}</Title>
+        {/* <Title>{state.frontity.title}</Title> */}
+        <Logo src={LogoImage} />
       </StyledLink>
       <p>{state.frontity.description}</p>
 
@@ -41,6 +43,11 @@ const Container = styled.div`
 const Title = styled.h1`
   margin: 0 0 16px;
 `;
+
+const Logo = styled.img`
+  max-width: 220px;
+  margin: 0 0 16px;
+`
 
 const ButtonSubs = styled.button`
   cursor: pointer;

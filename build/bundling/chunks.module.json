@@ -1,20 +1,20 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "e130bae63255f71e68f0",
+  "hash": "87c6ebedfd9db8d395a2",
   "publicPath": "/static/",
   "outputPath": "/Users/imac/Nodeprojects/wpfront/build/static",
   "assetsByChunkName": {
-    "list": [
-      "list.module.js",
-      "list.e143cd18f48631703ce0.hot-update.js"
-    ],
-    "wpfront": "wpfront.module.js"
+    "list": "list.module.js",
+    "wpfront": [
+      "wpfront.module.js",
+      "wpfront.5f429bf39b61bfa3397e.hot-update.js"
+    ]
   },
   "assets": [
     {
-      "name": "e143cd18f48631703ce0.hot-update.json",
-      "size": 46,
+      "name": "5f429bf39b61bfa3397e.hot-update.json",
+      "size": 49,
       "chunks": [],
       "chunkNames": [],
       "info": {
@@ -24,23 +24,18 @@
       "emitted": false
     },
     {
-      "name": "list.e143cd18f48631703ce0.hot-update.js",
-      "size": 16973,
-      "chunks": [
-        "list"
-      ],
-      "chunkNames": [
-        "list"
-      ],
+      "name": "images/logo-horizontal.png",
+      "size": 9077,
+      "chunks": [],
+      "chunkNames": [],
       "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
+        "sourceFilename": "packages/mars-theme/src/assets/img/logo-horizontal.png"
       },
       "emitted": false
     },
     {
       "name": "list.module.js",
-      "size": 28983,
+      "size": 28817,
       "chunks": [
         "list"
       ],
@@ -51,8 +46,23 @@
       "emitted": false
     },
     {
+      "name": "wpfront.5f429bf39b61bfa3397e.hot-update.js",
+      "size": 22574,
+      "chunks": [
+        "wpfront"
+      ],
+      "chunkNames": [
+        "wpfront"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "wpfront.module.js",
-      "size": 7043622,
+      "size": 7049501,
       "chunks": [
         "wpfront"
       ],
@@ -70,7 +80,8 @@
         "wpfront"
       ],
       "assets": [
-        "wpfront.module.js"
+        "wpfront.module.js",
+        "wpfront.5f429bf39b61bfa3397e.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -80,8 +91,7 @@
         "list"
       ],
       "assets": [
-        "list.module.js",
-        "list.e143cd18f48631703ce0.hot-update.js"
+        "list.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -92,14 +102,14 @@
     {
       "id": "list",
       "files": [
-        "list.module.js",
-        "list.e143cd18f48631703ce0.hot-update.js"
+        "list.module.js"
       ]
     },
     {
       "id": "wpfront",
       "files": [
-        "wpfront.module.js"
+        "wpfront.module.js",
+        "wpfront.5f429bf39b61bfa3397e.hot-update.js"
       ]
     }
   ]
