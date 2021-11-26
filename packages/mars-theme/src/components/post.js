@@ -138,6 +138,7 @@ const DateWrapper = styled.p`
 const Tag = styled.div`
   color: hsl(116, 0%, 40%);
   font-size: 0.9em;
+  margin-bottom: 30px;
   & > a {
     text-decoration: none !important;
     color: inherit;

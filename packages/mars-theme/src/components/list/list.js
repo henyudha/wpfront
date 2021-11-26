@@ -11,7 +11,7 @@ const List = ({ state }) => {
       {/* If the list is a taxonomy, we render a title. */}
       {data.isTaxonomy && (
         <Header>
-          {/* {data.taxonomy}:{" Kanal "}  */}
+          {data.taxonomy}: {""}
           <b>{decode(state.source[data.taxonomy][data.id].name)}</b>
         </Header>
       )}

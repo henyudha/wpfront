@@ -1,20 +1,20 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "a42b57893818cec901ec",
+  "hash": "fe547f5cdf462f683331",
   "publicPath": "/static/",
   "outputPath": "/Users/imac/Nodeprojects/wpfront/build/static",
   "assetsByChunkName": {
-    "list": "list.module.js",
-    "wpfront": [
-      "wpfront.module.js",
-      "wpfront.d654a7ecd2afbeffd89a.hot-update.js"
-    ]
+    "list": [
+      "list.module.js",
+      "list.f7bd5f2790b2db955e43.hot-update.js"
+    ],
+    "wpfront": "wpfront.module.js"
   },
   "assets": [
     {
-      "name": "d654a7ecd2afbeffd89a.hot-update.json",
-      "size": 49,
+      "name": "f7bd5f2790b2db955e43.hot-update.json",
+      "size": 46,
       "chunks": [],
       "chunkNames": [],
       "info": {
@@ -24,8 +24,23 @@
       "emitted": false
     },
     {
+      "name": "list.f7bd5f2790b2db955e43.hot-update.js",
+      "size": 16973,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "list.module.js",
-      "size": 28986,
+      "size": 28983,
       "chunks": [
         "list"
       ],
@@ -36,23 +51,8 @@
       "emitted": false
     },
     {
-      "name": "wpfront.d654a7ecd2afbeffd89a.hot-update.js",
-      "size": 94163,
-      "chunks": [
-        "wpfront"
-      ],
-      "chunkNames": [
-        "wpfront"
-      ],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
       "name": "wpfront.module.js",
-      "size": 7043315,
+      "size": 7043622,
       "chunks": [
         "wpfront"
       ],
@@ -70,8 +70,7 @@
         "wpfront"
       ],
       "assets": [
-        "wpfront.module.js",
-        "wpfront.d654a7ecd2afbeffd89a.hot-update.js"
+        "wpfront.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -81,7 +80,8 @@
         "list"
       ],
       "assets": [
-        "list.module.js"
+        "list.module.js",
+        "list.f7bd5f2790b2db955e43.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -92,14 +92,14 @@
     {
       "id": "list",
       "files": [
-        "list.module.js"
+        "list.module.js",
+        "list.f7bd5f2790b2db955e43.hot-update.js"
       ]
     },
     {
       "id": "wpfront",
       "files": [
-        "wpfront.module.js",
-        "wpfront.d654a7ecd2afbeffd89a.hot-update.js"
+        "wpfront.module.js"
       ]
     }
   ]
