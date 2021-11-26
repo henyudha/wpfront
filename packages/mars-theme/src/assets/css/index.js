@@ -21,7 +21,7 @@ const Styling = () => {
           }
           body {
             margin: 0;
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 400;
             font-style: normal;
             font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;

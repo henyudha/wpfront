@@ -1,6 +1,6 @@
 import { connect, styled, decode } from "frontity";
 import Item from "./list-item";
-import Pagination from "./pagination"; 
+import Pagination from "./pagination";
 
 const List = ({ state }) => {
   // Get the data of the current list.
@@ -22,9 +22,9 @@ const List = ({ state }) => {
           Editor: <b>{decode(state.source.author[data.id].name)}</b>
         </Header>
       )}
-      
-      <Lines />
-      
+
+      {/* <Lines /> */}
+
       {/* Iterate over the items of the list. */}
       {data.items.map(({ type, id }) => {
         const item = state.source[type][id];
@@ -41,7 +41,7 @@ export default connect(List);
 const Container = styled.section`
   width: 624px;
   margin: 10px 0 0;
-  padding: 0 24px 30px;
+  padding: 0 15px 30px;
   list-style: none;
 `;
 
@@ -49,7 +49,8 @@ const Header = styled.h3`
   font-weight: 300;
   text-transform: lowercase;
   text-align: center;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
+  margin-bottom: 30px;
 `;
 
 const Lines = styled.hr`
@@ -57,7 +58,14 @@ const Lines = styled.hr`
   border: 0;
   height: 1px;
   background: #cccccc;
-  background-image: -webkit-gradient(linear,left top,right top,from(#f5f5f5),color-stop(#cccccc),to(#f5f5f5));
-  background-image: -webkit-linear-gradient(left,#f5f5f5,#cccccc,#f5f5f5);
-  background-image: linear-gradient(to right,var#f5f5f5,#cccccc,#f5f5f5);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#f5f5f5),
+    color-stop(#cccccc),
+    to(#f5f5f5)
+  );
+  background-image: -webkit-linear-gradient(left, #f5f5f5, #cccccc, #f5f5f5);
+  background-image: linear-gradient(to right, var#f5f5f5, #cccccc, #f5f5f5);
 `;

@@ -21,7 +21,6 @@ const Footer = ({ state }) => {
 export default connect(Footer);
 
 const Container = styled.div`
-
 border-top: 1px solid #cccccc;
 color: #666666;
 font-size: 12px;
@@ -29,16 +28,16 @@ text-align: center;
 // box-sizing: border-box;
 margin-bottom: 10px 0 24px;
 justify-content: space-around;
-cursor: pointer;
 `;
 
 const FooterMenu = styled.ul`
+  max-width: 800px;
   list-style-type: none;
-  margin: 10px 0 20px;
+  margin: 10px auto 20px;
   padding: 0;
 `;
 
 const NamaMenu = styled.li`
   display: inline;
-  margin:0 10px; 
+  margin: 0 10px; 
 `;

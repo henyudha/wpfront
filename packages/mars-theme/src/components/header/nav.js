@@ -84,6 +84,7 @@ const NavContainer = styled.nav`
 
 const NavItem = styled.div`
   padding: 0;
+  font-size: 1.1em;
   margin: 0 12px 6px;
   box-sizing: border-box;
   flex-shrink: 0;

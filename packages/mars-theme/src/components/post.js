@@ -141,7 +141,7 @@ const Content = styled.div`
 
   p {
     line-height: 1.55em;
-    font-size: 1.05em;
+    font-size: 1.15em;
     margin: .2em auto 1.1em;
   }
 

@@ -5,9 +5,9 @@ import Footer from "./footer/footer";
 import List from "./list";
 import Post from "./post";
 import Page from "./pages/page";
+import HomePage from "./pages";
 import Loading from "./loading";
 import Title from "./title";
-import HomePage from "./pages";
 import PageError from "./page-error";
 import Styling from "../assets/css";
 import Prolog from "./prolog";
@@ -74,8 +74,8 @@ export default connect(Theme);
 // const globalStyles = css``;  Sementara dialihkan ke folder assets/css
 
 const HeadContainer = styled.div`
+  justify-content: center;
   display: flex;
-  align-items: center;
   flex-direction: column;
   background-color: #fff;
 `;

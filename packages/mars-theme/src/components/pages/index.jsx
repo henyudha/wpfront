@@ -4,18 +4,22 @@ import Link from "../link";
 
 const HomePage = ({ state }) => {
   return (
-    <>
-      <Container>
-        <StyledLink link="/">
-          <Title>{state.frontity.title}</Title>
-        </StyledLink>
-        <p>{state.frontity.description}</p>
+    <Container>
+      <StyledLink link="/">
+        <Title>{state.frontity.title}</Title>
+      </StyledLink>
+      <p>{state.frontity.description}</p>
 
-        <ButtonSubs><Link link="/#">subscribe</Link></ButtonSubs>
-        <ButtonSubs><Link link="/#">amaliah</Link></ButtonSubs>
-        <ButtonSubs><Link link="/kebajikan">kebajikan</Link></ButtonSubs>
-      </Container>
-    </>
+      <ButtonSubs>
+        <Link link="/#">subscribe</Link>
+      </ButtonSubs>
+      <ButtonSubs>
+        <Link link="/#">amaliah</Link>
+      </ButtonSubs>
+      <ButtonSubs>
+        <Link link="/kebajikan">kebajikan</Link>
+      </ButtonSubs>
+    </Container>
   );
 };
 
@@ -47,12 +51,13 @@ const ButtonSubs = styled.button`
   color: #fff;
   margin: 20px 2px 0;
   padding: 8px 14px;
-  border-radius: .35em;
+  border-radius: 0.35em;
   background: #56dc4c;
   border: 1px solid #56dc4c;
   &:hover {
     background-color: #2db323;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
 `;
 
