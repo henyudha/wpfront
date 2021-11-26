@@ -34,7 +34,7 @@ const FooterMenu = styled.ul`
   max-width: 800px;
   list-style-type: none;
   margin: 10px auto 20px;
-  padding: 0;
+  padding: 0 15px;
 `;
 
 const NamaMenu = styled.li`
