@@ -4,7 +4,6 @@ import Link from "../link";
 
 /**
  * Navigation Component
- *
  * It renders the navigation links
  */
 

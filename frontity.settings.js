@@ -14,10 +14,10 @@ const settings = {
         theme: {
           menu: [
             ["home", "/"],
-            ["news", "/cat/news/"],
-            ["esai", "/cat/esai/"],
-            ["inspirasi", "/cat/inspirasi/"],
-            ["media", "/cat/media/"],
+            ["news", "/kanal/news/"],
+            ["esai", "/kanal/esai/"],
+            ["inspirasi", "/kanal/inspirasi/"],
+            ["media", "/kanal/media/"],
             ["agenda", "/agenda/"],
             ["docs", "/docs/"],
           ],
@@ -37,7 +37,7 @@ const settings = {
       state: {
         source: {
           url: "https://cms.aqabah.org/",
-          categoryBase: "cat", // Custom Category dari WP di menu setting permalinks 
+          categoryBase: "kanal", // Custom Category dari WP di menu setting permalinks 
           tagBase: "", // Custom Tag dari WP di menu setting permalinks
           homepage: "", // Custom tampilan static page dari WP di menu setting reading
         },

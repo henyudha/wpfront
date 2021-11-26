@@ -166,7 +166,6 @@ const Content = styled.div`
   }
 
   blockquote {
-    text-align: center;
     margin: 16px auto;
     background-color: rgba(0, 0, 0, 0.1);
     border-left: 4px solid rgba(12, 17, 43);
