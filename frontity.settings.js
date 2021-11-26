@@ -39,7 +39,7 @@ const settings = {
           url: "https://cms.aqabah.org/",
           categoryBase: "", // Custom Category dari WP di menu setting permalinks 
           tagBase: "", // Custom Tag dari WP di menu setting permalinks
-          homepage: "", // Custom tampilan static page dari WP di menu setting reading
+          homepage: "/home", // Custom tampilan static page dari WP di menu setting reading
         },
       },
     },
