@@ -47,7 +47,7 @@ const Title = styled.h1`
 const Logo = styled.img`
   max-width: 220px;
   margin: 0 0 16px;
-`
+`;
 
 const ButtonSubs = styled.button`
   cursor: pointer;
