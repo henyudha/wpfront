@@ -5,14 +5,14 @@ const Styling = () => {
     <>
       <Global
         styles={css`
-          @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-          @font-face{
-            font-family:'UthmanThaha';
-            src:url('https://kangismet.github.io/fonts/Uthman-Thaha.eot');
-            src:url('https://kangismet.github.io/fonts/Uthman-Thaha.eot?#iefix') format('embedded-opentype'),
-            url('https://kangismet.github.io/fonts/Uthman-Thaha.ttf') format('truetype');
-            font-weight:normal;
-            font-display: swap;
+          @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+          @font-face {
+            font-family: "Uthman Hafs";
+            src: local("KFGQPC Uthmanic Script HAFS"),
+              url("https://cdn.rawgit.com/mustafa0x/qpc-fonts/f93bf5f3/various-woff2/UthmanicHafs1%20Ver09.woff2")
+                format("woff2"),
+              url("https://cdn.rawgit.com/mustafa0x/qpc-fonts/f93bf5f3/various-woff/UthmanicHafs1%20Ver09.woff")
+                format("woff");
           }
           html {
             font-size: 100%;
@@ -24,15 +24,18 @@ const Styling = () => {
             font-size: 15px;
             font-weight: 400;
             font-style: normal;
-            font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            line-height: 1,153;
+            font-family: "Poppins", -apple-system, BlinkMacSystemFont,
+              "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Helvetica,
+              Arial, sans-serif;
+            line-height: 1, 153;
             color: hsl(116, 10%, 20%);
             background: #fff;
           }
           p {
-            letter-spacing: .005em;
+            letter-spacing: 0.005em;
           }
-          a, a:visited {
+          a,
+          a:visited {
             color: inherit;
             text-decoration: none;
           }
@@ -42,31 +45,48 @@ const Styling = () => {
           a:-webkit-any-link {
             cursor: pointer;
           }
-          h1,h2,h3,h4,h5,h6 {
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
             margin-top: 0;
-            margin-bottom: .2rem;
+            margin-bottom: 0.2rem;
             font-weight: 600;
           }
-          h1 {font-size: 2.5rem;}
-          h2 {font-size: 2rem;}
-          h3 {font-size: 1.75rem;}
-          h4 {font-size: 1.5rem;}
-          h5 {font-size: 1.25rem;}
-          h6 {font-size: 1.1rem;}
-          
+          h1 {
+            font-size: 2.5rem;
+          }
+          h2 {
+            font-size: 2rem;
+          }
+          h3 {
+            font-size: 1.75rem;
+          }
+          h4 {
+            font-size: 1.5rem;
+          }
+          h5 {
+            font-size: 1.25rem;
+          }
+          h6 {
+            font-size: 1.1rem;
+          }
+
           .arab {
-            font-family: "UthmanThaha", "Traditional Arabic", sans-serif;
-            font-size: 26px;
+            font-family: "Uthman Hafs", "Traditional Arabic", sans-serif;
+            font-size: 2.4rem;
             font-weight: normal;
-            line-height: 2.8rem;
-            margin-bottom: 1rem;
+            line-height: 4rem;
+            padding-bottom: .6rem;
             text-align: right;
             direction: rtl;
           }
         `}
       />
     </>
-  )
-}
+  );
+};
 
 export default Styling;
