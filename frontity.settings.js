@@ -2,7 +2,7 @@ const settings = {
   name: "wpfront",
   state: {
     frontity: {
-      url: "https://cms.aqabah.org/",
+      url: "https://tqnn.aqabah.org/",
       title: "TQNN",
       description: "Media berita dan informasi ikhwan-akhwat TQN Pontren Suryalaya. Inspirasi ketasawufan dan ketarekatan",
     },
@@ -36,7 +36,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          url: "https://cms.aqabah.org/",
+          url: "https://tqnn.aqabah.org/",
           categoryBase: "", // Custom Category dari WP di menu setting permalinks 
           tagBase: "", // Custom Tag dari WP di menu setting permalinks
           homepage: "/home", // Custom tampilan static page dari WP di menu setting reading
