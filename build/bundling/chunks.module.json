@@ -1,19 +1,19 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "741471a68db9ae175293",
+  "hash": "e395648e598bd7d070ab",
   "publicPath": "",
   "outputPath": "/Users/hen/Nodepro/wpfront/build/static",
   "assetsByChunkName": {
     "list": "list.module.js",
     "wpfront": [
       "wpfront.module.js",
-      "wpfront.916a7645a674a0ce2ac1.hot-update.js"
+      "wpfront.8bbe47e08d86e021de45.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "916a7645a674a0ce2ac1.hot-update.json",
+      "name": "8bbe47e08d86e021de45.hot-update.json",
       "size": 49,
       "chunks": [],
       "chunkNames": [],
@@ -31,7 +31,7 @@
       "info": {
         "sourceFilename": "packages/mars-theme/src/assets/img/logo-horizontal.png"
       },
-      "emitted": false
+      "emitted": true
     },
     {
       "name": "list.module.js",
@@ -43,11 +43,11 @@
         "list"
       ],
       "info": {},
-      "emitted": false
+      "emitted": true
     },
     {
-      "name": "wpfront.916a7645a674a0ce2ac1.hot-update.js",
-      "size": 10809,
+      "name": "wpfront.8bbe47e08d86e021de45.hot-update.js",
+      "size": 10852,
       "chunks": [
         "wpfront"
       ],
@@ -62,7 +62,7 @@
     },
     {
       "name": "wpfront.module.js",
-      "size": 7046060,
+      "size": 7046103,
       "chunks": [
         "wpfront"
       ],
@@ -81,7 +81,7 @@
       ],
       "assets": [
         "wpfront.module.js",
-        "wpfront.916a7645a674a0ce2ac1.hot-update.js"
+        "wpfront.8bbe47e08d86e021de45.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -109,7 +109,7 @@
       "id": "wpfront",
       "files": [
         "wpfront.module.js",
-        "wpfront.916a7645a674a0ce2ac1.hot-update.js"
+        "wpfront.8bbe47e08d86e021de45.hot-update.js"
       ]
     }
   ]

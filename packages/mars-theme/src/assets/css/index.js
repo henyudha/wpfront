@@ -7,12 +7,15 @@ const Styling = () => {
         styles={css`
           @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
           @font-face {
-            font-family: "Uthman Hafs";
-            src: local("KFGQPC Uthmanic Script HAFS"),
-              url("https://cdn.rawgit.com/mustafa0x/qpc-fonts/f93bf5f3/various-woff2/UthmanicHafs1%20Ver09.woff2")
-                format("woff2"),
-              url("https://cdn.rawgit.com/mustafa0x/qpc-fonts/f93bf5f3/various-woff/UthmanicHafs1%20Ver09.woff")
-                format("woff");
+            font-family: "LPMQ";
+            src: url("https://kangismet.github.io/fonts/lpmq.eot");
+            src: url("https://kangismet.github.io/fonts/lpmq.eot?#iefix")
+                format("embedded-opentype"),
+              url("https://kangismet.github.io/fonts/lpmq.ttf")
+                format("truetype");
+            font-weight: 400;
+            font-weight: normal;
+            font-display: swap;
           }
           html {
             font-size: 100%;
@@ -75,11 +78,11 @@ const Styling = () => {
           }
 
           .arab {
-            font-family: "Uthman Hafs", "Traditional Arabic", sans-serif;
+            font-family: "LPMQ", "Traditional Arabic", sans-serif;
             font-size: 2.4rem;
             font-weight: normal;
             line-height: 4rem;
-            padding-bottom: .6rem;
+            padding-bottom: 0.6rem;
             text-align: right;
             direction: rtl;
           }
