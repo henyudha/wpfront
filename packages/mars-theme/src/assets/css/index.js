@@ -79,9 +79,9 @@ const Styling = () => {
 
           .arab {
             font-family: "LPMQ", "Traditional Arabic", sans-serif;
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             font-weight: normal;
-            line-height: 4rem;
+            line-height: 3.5rem;
             padding-bottom: 0.6rem;
             text-align: right;
             direction: rtl;

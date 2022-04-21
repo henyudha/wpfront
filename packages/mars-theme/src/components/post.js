@@ -159,8 +159,9 @@ const Content = styled.div`
   }
 
   p {
-    line-height: 1.55em;
+    line-height: 1.6em;
     font-size: 1.15em;
+    letter-spacing: .01em;
     margin: 0.2em auto 1.1em;
   }
 

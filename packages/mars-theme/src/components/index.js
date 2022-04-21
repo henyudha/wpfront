@@ -53,10 +53,11 @@ const Theme = ({ state }) => {
       <Main>
         <Switch>
           <Loading when={data.isFetching} />
+          {/* <HomePage when={data.link["/"]} /> */}
           <List when={data.isArchive} />
-          <HomePage when={data.isHome} />
           <Page when={data.isPage} />
           <Post when={data.isPostType} />
+          <Prolog when={data.link["/"]} />
           <PageError when={data.isError} />
         </Switch>
       </Main>

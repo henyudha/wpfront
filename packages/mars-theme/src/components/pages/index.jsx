@@ -36,8 +36,9 @@ const Container = styled.div`
     margin: auto;
     font-size: 1.29em;
     font-weight: 200;
+    letter-spacing: .01em;
     line-height: 1.4em;
-    color: #666666
+    color: #666666;
 `;
 
 const Title = styled.h1`
