@@ -3,7 +3,6 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
-import listItem from "./list/list-item";
 
 /**
  * The Post component that Mars uses to render any kind of "post type", like
