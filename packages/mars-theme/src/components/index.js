@@ -4,13 +4,12 @@ import Header from "./header/header";
 import Footer from "./footer/footer";
 import List from "./list";
 import Post from "./post";
+import Beranda from "./pages";
+import PageError from "./pages/page-error";
 import Page from "./pages/page";
-import HomePage from "./pages";
 import Loading from "./loading";
 import Title from "./title";
-import PageError from "./page-error";
 import Styling from "../assets/css";
-import Prolog from "./prolog";
 import Banner from "./banner";
 
 /**
@@ -53,11 +52,10 @@ const Theme = ({ state }) => {
       <Main>
         <Switch>
           <Loading when={data.isFetching} />
-          {/* <HomePage when={data.isHome} /> */}
-          <List when={data.isArchive} />
+          <Beranda when={data.isHome} />
           <Page when={data.isPage} />
+          <List when={data.isArchive} />
           <Post when={data.isPostType} />
-          <Prolog when={data.link["/"]} />
           <PageError when={data.isError} />
         </Switch>
       </Main>

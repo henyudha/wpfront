@@ -13,13 +13,13 @@ const settings = {
       state: {
         theme: {
           menu: [
-            ["home", "/"],
-            ["news", "/category/news/"],
-            ["essay", "/category/essay/"],
-            ["insights", "/category/insights/"],
-            ["media", "/category/media/"],
-            ["agenda", "/agenda/"],
-            ["docs", "/docs/"],
+            // ["home", "/"],
+            // ["news", "/category/news/"],
+            // ["essay", "/category/essay/"],
+            // ["insights", "/category/insights/"],
+            // ["media", "/category/media/"],
+            // ["agenda", "/agenda/"],
+            // ["docs", "/docs/"],
           ],
           featured: {
             showOnList: true,

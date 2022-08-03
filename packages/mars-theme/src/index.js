@@ -21,7 +21,7 @@ const marsTheme = {
     theme: {
       autoPrefetch: "in-view",
       menu: [],
-      // menuUrl: "main-menu",
+      menuUrl: "mainmenu",
       isMobileMenuOpen: false,
       featured: {
         showOnList: false,
@@ -42,9 +42,9 @@ const marsTheme = {
       closeMobileMenu: ({ state }) => {
         state.theme.isMobileMenuOpen = false;
       },
-      // beforeSSR: async ({ state, actions }) => {
-      //   await actions.source.fetch(`/menu/${state.theme.menuUrl}/`);
-      // },
+      beforeSSR: async ({ state, actions }) => {
+        await actions.source.fetch(`/menu/${state.theme.menuUrl}/`);
+      },
       // Script utk menu fetch dari WP
     },
   },
@@ -58,7 +58,7 @@ const marsTheme = {
       processors: [image, iframe, link],
     },
     source: {
-      // handlers: [menuHandler],
+      handlers: [menuHandler],
     },
   },
 };
