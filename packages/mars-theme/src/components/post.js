@@ -159,16 +159,18 @@ const Content = styled.div`
   }
 
   p {
-    line-height: 1.6em;
+    line-height: 1.65em;
     font-size: 1.15em;
     letter-spacing: .01em;
     margin: 0.2em auto 1.1em;
+    -webkit-font-smoothing: antialiased;
   }
 
   img {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 8px;
   }
 
   figure {
@@ -183,6 +185,9 @@ const Content = styled.div`
   iframe {
     display: block;
     margin: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
   }
 
   blockquote {

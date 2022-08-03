@@ -15,8 +15,8 @@ const settings = {
           menu: [
             ["home", "/"],
             ["news", "/category/news/"],
-            ["esai", "/category/esai/"],
-            ["inspirasi", "/category/inspirasi/"],
+            ["essay", "/category/essay/"],
+            ["insight", "/category/insights/"],
             ["media", "/category/media/"],
             ["agenda", "/agenda/"],
             ["docs", "/docs/"],

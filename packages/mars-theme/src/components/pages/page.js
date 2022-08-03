@@ -145,6 +145,7 @@ const Content = styled.div`
     width: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 8px;
   }
 
   figure {
