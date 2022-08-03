@@ -16,7 +16,7 @@ const settings = {
             ["home", "/"],
             ["news", "/category/news/"],
             ["essay", "/category/essay/"],
-            ["insight", "/category/insights/"],
+            ["insights", "/category/insights/"],
             ["media", "/category/media/"],
             ["agenda", "/agenda/"],
             ["docs", "/docs/"],
