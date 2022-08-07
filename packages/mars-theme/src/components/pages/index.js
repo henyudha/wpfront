@@ -16,7 +16,7 @@ const Beranda = ({ state }) => {
         <Link link="/#">subscribe</Link>
       </ButtonSubs>
       <ButtonSubs>
-        <Link link="/#">amaliah</Link>
+        <Link link="/docs">amaliah</Link>
       </ButtonSubs>
       <ButtonSubs>
         <Link link="/kebajikan">kebajikan</Link>
