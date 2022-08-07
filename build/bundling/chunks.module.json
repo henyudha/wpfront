@@ -1,19 +1,19 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "334ab8da4a2788ea4537",
+  "hash": "8d9a5baaeb1a3a669735",
   "publicPath": "",
   "outputPath": "/Users/hen/Nodepro/wpfront/build/static",
   "assetsByChunkName": {
     "list": "list.module.js",
     "wpfront": [
       "wpfront.module.js",
-      "wpfront.ff5df7b21dfa05215d31.hot-update.js"
+      "wpfront.334ab8da4a2788ea4537.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "ff5df7b21dfa05215d31.hot-update.json",
+      "name": "334ab8da4a2788ea4537.hot-update.json",
       "size": 49,
       "chunks": [],
       "chunkNames": [],
@@ -46,8 +46,8 @@
       "emitted": false
     },
     {
-      "name": "wpfront.ff5df7b21dfa05215d31.hot-update.js",
-      "size": 22726,
+      "name": "wpfront.334ab8da4a2788ea4537.hot-update.js",
+      "size": 22770,
       "chunks": [
         "wpfront"
       ],
@@ -62,7 +62,7 @@
     },
     {
       "name": "wpfront.module.js",
-      "size": 6995848,
+      "size": 6995892,
       "chunks": [
         "wpfront"
       ],
@@ -81,7 +81,7 @@
       ],
       "assets": [
         "wpfront.module.js",
-        "wpfront.ff5df7b21dfa05215d31.hot-update.js"
+        "wpfront.334ab8da4a2788ea4537.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -109,7 +109,7 @@
       "id": "wpfront",
       "files": [
         "wpfront.module.js",
-        "wpfront.ff5df7b21dfa05215d31.hot-update.js"
+        "wpfront.334ab8da4a2788ea4537.hot-update.js"
       ]
     }
   ]

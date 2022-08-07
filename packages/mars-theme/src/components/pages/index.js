@@ -25,6 +25,8 @@ const Beranda = ({ state }) => {
   );
 };
 
+
+
 export default connect(Beranda);
 
 const Container = styled.div`
