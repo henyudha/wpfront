@@ -39,7 +39,7 @@ const settings = {
           url: "https://tqnn.aqabah.org/",
           categoryBase: "", // Custom Category dari WP di menu setting permalinks 
           tagBase: "", // Custom Tag dari WP di menu setting permalinks
-          homepage: "/home", // Custom tampilan static page dari WP di menu setting reading
+          // homepage: "/homepage", // Custom tampilan static page dari WP di menu setting reading
         },
       },
     },
