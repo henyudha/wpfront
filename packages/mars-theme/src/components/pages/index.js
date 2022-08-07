@@ -1,7 +1,7 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "../link";
-import LogoImage from "../../assets/img/logo-horizontal.png";
+import LogoImage from "../../assets/img/logo-tqnn.png";
 
 const Beranda = ({ state }) => {
   return (
@@ -11,10 +11,6 @@ const Beranda = ({ state }) => {
         <Logo src={LogoImage} />
       </StyledLink>
       <p>{state.frontity.description}</p>
-
-      <ButtonSubs>
-        <Link link="/#">subscribe</Link>
-      </ButtonSubs>
       <ButtonSubs>
         <Link link="/docs">amaliah</Link>
       </ButtonSubs>
@@ -32,7 +28,7 @@ export default connect(Beranda);
 const Container = styled.div`
   max-width: 800px;
   text-align: center;
-  padding: 50px 16px 20px;
+  padding: 30px 16px 20px;
   margin: auto;
   & > p {
     margin: auto;
@@ -48,7 +44,7 @@ const Title = styled.h1`
 `;
 
 const Logo = styled.img`
-  max-width: 220px;
+  max-width: 100px;
   margin: 0 0 16px;
 `;
 

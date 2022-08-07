@@ -1,35 +1,21 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "8d9a5baaeb1a3a669735",
+  "hash": "fed3a81c7cc5a542eec5",
   "publicPath": "",
   "outputPath": "/Users/hen/Nodepro/wpfront/build/static",
   "assetsByChunkName": {
     "list": "list.module.js",
-    "wpfront": [
-      "wpfront.module.js",
-      "wpfront.334ab8da4a2788ea4537.hot-update.js"
-    ]
+    "wpfront": "wpfront.module.js"
   },
   "assets": [
     {
-      "name": "334ab8da4a2788ea4537.hot-update.json",
-      "size": 49,
+      "name": "images/logo-tqnn.png",
+      "size": 38671,
       "chunks": [],
       "chunkNames": [],
       "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
-      "name": "images/logo-horizontal.png",
-      "size": 9077,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "sourceFilename": "packages/mars-theme/src/assets/img/logo-horizontal.png"
+        "sourceFilename": "packages/mars-theme/src/assets/img/logo-tqnn.png"
       },
       "emitted": false
     },
@@ -46,23 +32,8 @@
       "emitted": false
     },
     {
-      "name": "wpfront.334ab8da4a2788ea4537.hot-update.js",
-      "size": 22770,
-      "chunks": [
-        "wpfront"
-      ],
-      "chunkNames": [
-        "wpfront"
-      ],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
       "name": "wpfront.module.js",
-      "size": 6995892,
+      "size": 6994725,
       "chunks": [
         "wpfront"
       ],
@@ -70,7 +41,7 @@
         "wpfront"
       ],
       "info": {},
-      "emitted": false
+      "emitted": true
     }
   ],
   "filteredAssets": 0,
@@ -80,8 +51,7 @@
         "wpfront"
       ],
       "assets": [
-        "wpfront.module.js",
-        "wpfront.334ab8da4a2788ea4537.hot-update.js"
+        "wpfront.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -108,8 +78,7 @@
     {
       "id": "wpfront",
       "files": [
-        "wpfront.module.js",
-        "wpfront.334ab8da4a2788ea4537.hot-update.js"
+        "wpfront.module.js"
       ]
     }
   ]
