@@ -7,29 +7,49 @@ import Link from "../link";
  * @param props - The props passed to the component from parent.
  * @returns A React component.
  */
-const MenuModal = ({ ...props }) => {
-  const { state } = useConnect();
-  const { menu } = state.theme;
-  const isThereLinks = menu?.length > 0;
+
+ const MenuModal = ({ state }) => {
+  const items = state.source.get(`/menu/${state.theme.menuUrl}/`).items;
 
   return (
-    <div {...props}>
-      {state.frontity.mode !== "amp" && <MenuOverlay />}
+    <>
+      <MenuOverlay />
       <MenuContent as="nav">
-        {isThereLinks &&
-          menu.map(([name, link]) => (
-            <MenuLink
-              key={name}
-              link={link}
-              aria-current={state.router.link === link ? "page" : undefined}
-            >
-              {name}
+        {items.map((item) => {
+          return (
+            <MenuLink key={item.ID} link={item.url}>
+              {item.title}
             </MenuLink>
-          ))}
+          );
+        })}
       </MenuContent>
-    </div>
+    </>
   );
 };
+
+// const MenuModal = ({ ...props }) => {
+//   const { state } = useConnect();
+//   const { menu } = state.theme;
+//   const isThereLinks = menu?.length > 0;
+
+//   return (
+//     <div {...props}>
+//       {state.frontity.mode !== "amp" && <MenuOverlay />}
+//       <MenuContent as="nav">
+//         {isThereLinks &&
+//           menu.map(([name, link]) => (
+//             <MenuLink
+//               key={name}
+//               link={link}
+//               aria-current={state.router.link === link ? "page" : undefined}
+//             >
+//               {name}
+//             </MenuLink>
+//           ))}
+//       </MenuContent>
+//     </div>
+//   );
+// };
 
 const MenuOverlay = styled.div`
   background-color: hsl(116, 0%, 80%);
@@ -44,7 +64,7 @@ const MenuOverlay = styled.div`
 
 const MenuContent = styled.div`
   z-index: 3;
-  position: relative;
+  padding-top: 2.5rem;
 `;
 
 const MenuLink = styled(Link)`
@@ -53,12 +73,11 @@ const MenuLink = styled(Link)`
   outline: 0;
   font-size: 20px;
   text-align: center;
-  padding: 1.2rem 0;
+  padding: 0.8rem 0;
 
   &:hover,
   &:focus {
     background-color: rgba(0, 0, 0, 0.05);
-
   }
   // styles for active link
   &[aria-current="page"] {
@@ -67,4 +86,5 @@ const MenuLink = styled(Link)`
   }
 `;
 
-export default connect(MenuModal, { injectProps: false });
+// export default connect(MenuModal, { injectProps: false });
+export default connect(MenuModal);

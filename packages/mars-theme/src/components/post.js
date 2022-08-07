@@ -89,7 +89,7 @@ const Post = ({ state, actions, libraries }) => {
 
           {/* Menampilkan Tags */}
           <Tag>
-            Tags: <StyledLink link={tag.link}>
+            tags: <StyledLink link={tag.link}>
               <b>{tag.name}</b>
             </StyledLink>
           </Tag>

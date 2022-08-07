@@ -63,8 +63,8 @@ const NavContainer = styled.nav`
 
 const NavItem = styled.div`
   padding: 0;
-  font-size: 1.1em;
   margin: 0 12px 6px;
+  font-size: 1.1em;
   box-sizing: border-box;
   flex-shrink: 0;
 
@@ -76,7 +76,7 @@ const NavItem = styled.div`
     /* Use for semantic approach to style the current link */
     &[aria-current="page"] {
         font-weight: bold;
-    //   border-bottom-color: #051504;
+      border-bottom-color: #051504; 
     }
   }
 
@@ -97,13 +97,13 @@ const NavItem = styled.div`
 `;
 
 /* Tambahan untuk menu child */
-const NavItemWithChild = styled.div`
-  background: blue;
-`;
+// const NavItemWithChild = styled.div`
+//   background: blue;
+// `;
 
-const ChildMenu = styled.div`
-  left: 0;
-  background: blue;
-  width: 100%;
-  z-index: 1;
-`;
+// const ChildMenu = styled.div`
+//   left: 0;
+//   background: blue;
+//   width: 100%;
+//   z-index: 1;
+// `;

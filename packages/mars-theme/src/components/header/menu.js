@@ -10,48 +10,69 @@ import MenuModal from "./menu-modal";
  * @param props - The state and actions injected by Frontity.
  * @returns A React component.
  */
+// function MobileMenu({ state, actions }) {
+//   const { menu, isMobileMenuOpen } = state.theme;
+//   if (menu?.length === 0) return null;
+
+//   return state.frontity.mode === "amp" ? (
+//     <>
+//       <Head>
+//         <script
+//           async={undefined}
+//           custom-element="amp-bind"
+//           src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
+//         ></script>
+//       </Head>
+
+//       <MenuToggle>
+//         <HamburgerIcon
+//           color="#051504"
+//           size="24px"
+//           role="button"
+//           tabindex="0"
+//           data-amp-bind-hidden="isMenuOpen"
+//           on="tap:AMP.setState({ isMenuOpen: true })"
+//         />
+//         <CloseIcon
+//           color="#051504"
+//           size="20px"
+//           role="button"
+//           tabindex="0"
+//           data-amp-bind-hidden="!isMenuOpen"
+//           on="tap:AMP.setState({ isMenuOpen: false })"
+//           hidden
+//         />
+//       </MenuToggle>
+//       <MenuModal data-amp-bind-hidden="!isMenuOpen" hidden />
+//     </>
+//   ) : (
+//     <>
+//       <MenuToggle onClick={actions.theme.toggleMobileMenu}>
+//         {isMobileMenuOpen ? (
+//           <>
+//             {/* Add some style to the body when menu is open,
+//             to prevent body scroll */}
+//             <Global styles={{ body: { overflowY: "hidden" } }} />
+//             <CloseIcon color="#051504" size="20px" />
+//           </>
+//         ) : (
+//           <HamburgerIcon color="#051504" size="24px" />
+//         )}
+//       </MenuToggle>
+//       {/* If the menu is open, render the menu modal */}
+//       {isMobileMenuOpen && <MenuModal />}
+//     </>
+//   );
+// }
+
 function MobileMenu({ state, actions }) {
-  const { menu, isMobileMenuOpen } = state.theme;
-  if (menu?.length === 0) return null;
-
-  return state.frontity.mode === "amp" ? (
-    <>
-      <Head>
-        <script
-          async={undefined}
-          custom-element="amp-bind"
-          src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
-        ></script>
-      </Head>
-
-      <MenuToggle>
-        <HamburgerIcon
-          color="#051504"
-          size="24px"
-          role="button"
-          tabindex="0"
-          data-amp-bind-hidden="isMenuOpen"
-          on="tap:AMP.setState({ isMenuOpen: true })"
-        />
-        <CloseIcon
-          color="#051504"
-          size="20px"
-          role="button"
-          tabindex="0"
-          data-amp-bind-hidden="!isMenuOpen"
-          on="tap:AMP.setState({ isMenuOpen: false })"
-          hidden
-        />
-      </MenuToggle>
-      <MenuModal data-amp-bind-hidden="!isMenuOpen" hidden />
-    </>
-  ) : (
+  const { isMobileMenuOpen } = state.theme;
+  return (
     <>
       <MenuToggle onClick={actions.theme.toggleMobileMenu}>
         {isMobileMenuOpen ? (
           <>
-            {/* Add some style to the body when menu is open,
-            to prevent body scroll */}
+            {/* add some style to the body when menu is open, to prevent body scroll */}
             <Global styles={{ body: { overflowY: "hidden" } }} />
             <CloseIcon color="#051504" size="20px" />
           </>
@@ -59,7 +80,7 @@ function MobileMenu({ state, actions }) {
           <HamburgerIcon color="#051504" size="24px" />
         )}
       </MenuToggle>
-      {/* If the menu is open, render the menu modal */}
+      {/* if the menu is open, render the menu modal */}
       {isMobileMenuOpen && <MenuModal />}
     </>
   );
@@ -70,6 +91,7 @@ const MenuToggle = styled.button`
   right: 14px;
   top: 5px;
   background: transparent;
+  color: white;
   border: 0;
   z-index: 5;
   height: 40px;

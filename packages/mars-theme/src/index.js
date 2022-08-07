@@ -21,7 +21,7 @@ const marsTheme = {
     theme: {
       autoPrefetch: "in-view",
       menu: [],
-      menuUrl: "mainmenu",
+      menuUrl: "mainmenu",    // Setting main navigation from WP
       isMobileMenuOpen: false,
       featured: {
         showOnList: false,
@@ -42,10 +42,10 @@ const marsTheme = {
       closeMobileMenu: ({ state }) => {
         state.theme.isMobileMenuOpen = false;
       },
+      // Script utk menu fetch dari WP
       beforeSSR: async ({ state, actions }) => {
         await actions.source.fetch(`/menu/${state.theme.menuUrl}/`);
       },
-      // Script utk menu fetch dari WP
     },
   },
   libraries: {
